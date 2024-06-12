@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        form{
+            background-color:rgb(92, 155, 155);
+            width: 300px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 10px;
+        }
+        label{
+          display: block;
+        }
+        fieldset{
+            border: 2px solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>User personal information</legend>
+            <label>Enter your first name: </label>
+            <input type="text" name="name" placeholder="First name">
+            <label>Enter your last name: </label>
+            <input type="text" name="name"placeholder="Last name">
+            <label>Enter your gender: </label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <label>Enter your birhtday: </label>
+            <input type="date" name="">
+            <label>Enter your address: </label>
+            <textarea neme="address" name="" placeholder="Enter your address"></textarea>
+            <input type="submit" name="">
+        </fieldset>
+    </form>
+</body>
+</html>
