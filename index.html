@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+      
       div {
-        background-color: rgb(62, 131, 204);
+        background-color: #007BFF;
         margin-left: 0px;
         margin-right: 0px;
         margin-top: -20px;
@@ -12,7 +15,7 @@
       ul {
         overflow: hidden;
         list-style-type: none;
-        background-color: rgb(62, 131, 204);
+        background-color: #007BFF;
         margin-left: 0;
         margin-top: 0;
         padding: 10px;
@@ -38,7 +41,109 @@
       h1{
         text-align: center;
       }
-      
+      .main-content {
+    padding: 20px;
+}
+
+.login-button {
+
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+    text-align: center;
+}
+.modal:target {
+    display: block; 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px; 
+    position: relative;
+    text-align: left;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+fieldset{
+  border:0px;
+}
+.gender{
+  margin-top: -30px;
+}
+.radio{
+  margin-top: 20px;
+}
+.Cpp{
+
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
     </style>
   </head>
   <body>
@@ -55,7 +160,7 @@
             /></a>
           </li>
           <li style="font-size: 20px; margin-right: 40px">
-            <a href="loginpage.html">Sign in</a>
+            <a href="#loginModal" class="login-button">Sign in</a>
           </li>
         </ul>
       </nav>
@@ -95,5 +200,30 @@
       <dd>Участие в хакатони и състезания по програмиране.</dd>
     </dl>
     </div>
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+          <a href="#" class="close-button">&times;</a>
+          <h2>Login</h2>
+          <form>
+            <fieldset>
+              <legend>User personal information</legend>
+              <label>Enter your first name: </label>
+              <input type="text" name="name" placeholder="First name">
+              <label>Enter your last name: </label>
+              <input type="text" name="name"placeholder="Last name">
+              <label>Enter your gender: </label>
+              <input class="radio" type="radio" name="gender" value="male" > <p class="gender">Male</p>
+              <input class="radio" type="radio" name="gender" value="female"> <p class="gender">Female</p>
+              <label>Enter your birhtday: </label>
+              <input type="date" name="">
+              <label>Enter your address: </label>
+              <textarea neme="address" name="" placeholder="Enter your address"></textarea>
+              <button><a href="index.html">submit</a></button>
+          </fieldset>
+          </form>
+      </div>
+  </div>
+  <a href="C++.html" class="Cpp">C++</a>
+
   </body>
 </html>
