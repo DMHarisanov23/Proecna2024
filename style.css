@@ -192,3 +192,8 @@ fieldset {
   margin-right: 80%;
   margin-top: 10px;
 }
+.intro{
+  max-width: 100%;
+  width: 100%;
+  text-align: center ;
+}
