@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div>
@@ -12,7 +12,8 @@
         <ul>
           <li>
             <a href="settings.html"
-              ><img class="settings"
+              ><img
+                class="settings"
                 src="settings.png"
                 alt="settings"
                 height="20px"
@@ -22,69 +23,90 @@
           <li style="font-size: 20px; margin-right: 40px">
             <a href="#loginModal" class="login-button">Sign in</a>
           </li>
+          <li class="courses"></li>
         </ul>
       </nav>
     </div>
-
-
-
-    <h1>
-      Добре дошли във Ветър!
-    </h1>
+    <div class="dropdown">
+      <button class="dropdownbtn">drop</button>
+      <div class="dropdown-contend">
+        <div class="courses2">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <h1>Добре дошли във Ветър!</h1>
 
     <div class="intro">
-    <p>Здравейте и добре дошли в нашето ново училище Ветър! Тук ще получите възможността да усвоите всички необходими знания и умения за програмиране на C++ и C#. Нашите курсове са създадени, за да ви предоставят задълбочени познания и практически опит, необходими за успешна кариера в света на софтуерното разработване.</p>
-    <h3>Какво ще научите:</h3>
-    <dl>
-      <dt>Основи на програмирането:</dt>
-      <dd>Запознаване с основните концепции на програмирането.</dd>
-      <dd>Работа с променливи, типове данни и оператори.</dd>
-      <dd>Контрол на потока: условни оператори и цикли.</dd>
-    </dl>
-    <dl>
-      <dt>Основи на C++:</dt>
-      <dd>Синтаксис и структура на C++ програмите.</dd>
-      <dd>Функции и обектно-ориентирано програмиране.</dd>
-      <dd>Работа с указатели и динамично разпределение на памет.</dd>
-</dl>
-<dl>
-      <dt>Основи на C#:</dt>
-      <dd>Синтаксис и структура на C# програмите.</dd>
+      <p>
+        Здравейте и добре дошли в нашето ново училище Ветър! Тук ще получите
+        възможността да усвоите всички необходими знания и умения за
+        програмиране на C++ и C#. Нашите курсове са създадени, за да ви
+        предоставят задълбочени познания и практически опит, необходими за
+        успешна кариера в света на софтуерното разработване.
+      </p>
+      <h3>Какво ще научите:</h3>
+      <dl>
+        <dt>Основи на програмирането:</dt>
+        <dd>Запознаване с основните концепции на програмирането.</dd>
+        <dd>Работа с променливи, типове данни и оператори.</dd>
+        <dd>Контрол на потока: условни оператори и цикли.</dd>
+      </dl>
+      <dl>
+        <dt>Основи на C++:</dt>
+        <dd>Синтаксис и структура на C++ програмите.</dd>
+        <dd>Функции и обектно-ориентирано програмиране.</dd>
+        <dd>Работа с указатели и динамично разпределение на памет.</dd>
+      </dl>
+      <dl>
+        <dt>Основи на C#:</dt>
+        <dd>Синтаксис и структура на C# програмите.</dd>
 
-      <dd>Основи на .NET екосистемата.</dd>
-      <dd>Работа с класове, наследяване и интерфейси.</dd>
-      <dt >Проектна работа и практическо обучение:</dt>
-    </dl> <dl>
-      <dd>Изграждане на реални проекти с помощта на C++ и C#.</dd>
-      <dd>Работа в екип и използване на системи за контрол на версиите като Git.</dd>
-      <dd>Участие в хакатони и състезания по програмиране.</dd>
-    </dl>
+        <dd>Основи на .NET екосистемата.</dd>
+        <dd>Работа с класове, наследяване и интерфейси.</dd>
+        <dt>Проектна работа и практическо обучение:</dt>
+      </dl>
+      <dl>
+        <dd>Изграждане на реални проекти с помощта на C++ и C#.</dd>
+        <dd>
+          Работа в екип и използване на системи за контрол на версиите като Git.
+        </dd>
+        <dd>Участие в хакатони и състезания по програмиране.</dd>
+      </dl>
     </div>
     <div id="loginModal" class="modal">
       <div class="modal-content">
-          <a href="#" class="close-button">&times;</a>
-          <h2 class="login">Login</h2>
-          <form>
-            <fieldset>
-              <legend>User personal information</legend>
-              <label>Enter your first name: </label>
-              <input type="text" name="name" placeholder="First name">
-              <label>Enter your last name: </label>
-              <input type="text" name="name"placeholder="Last name">
-              <label>Enter your gender: </label>
-              <input class="radio" type="radio" name="gender" value="male" > <p class="gender">Male</p>
-              <input class="radio" type="radio" name="gender" value="female"> <p class="gender">Female</p>
-              <label>Enter your birhtday: </label>
-              <input type="date" name="">
-              <label>Enter your email address: </label>
-              <textarea neme="address" name="" placeholder="Enter your email address"></textarea>
-              <button><a href="index.html">submit</a></button>
+        <a href="#" class="close-button">&times;</a>
+        <h2 class="login">Login</h2>
+        <form>
+          <fieldset>
+            <legend>User personal information</legend>
+            <label>Enter your first name: </label>
+            <input type="text" name="name" placeholder="First name" />
+            <label>Enter your last name: </label>
+            <input type="text" name="name" placeholder="Last name" />
+            <label>Enter your gender: </label>
+            <input class="radio" type="radio" name="gender" value="male" />
+            <p class="gender">Male</p>
+            <input class="radio" type="radio" name="gender" value="female" />
+            <p class="gender">Female</p>
+            <label>Enter your birhtday: </label>
+            <input type="date" name="" />
+            <label>Enter your email address: </label>
+            <textarea
+              neme="address"
+              name=""
+              placeholder="Enter your email address"
+            ></textarea>
+            <button><a href="index.html">submit</a></button>
           </fieldset>
-          </form>
+        </form>
       </div>
-  </div>
-  <a href="C++.html" class="Cpp" >C++ lessons</a>
-  <a href="Csh.html" class="Csh" >C# lessons</a>
-
+    </div>
   </body>
 </html>
